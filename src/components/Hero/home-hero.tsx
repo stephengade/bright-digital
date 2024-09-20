@@ -29,7 +29,7 @@ export const HomeHero = () => {
         style={{
           backgroundImage: `url('/gridline.svg')`,
         }}
-        className="font-manrope relative z-[50] grid grid-cols-1 md:grid-cols-2 md:gap-[10%] items-center"
+        className="font-manrope relative z-[50] grid grid-cols-1 md:grid-cols-2 md:gap-[5%] items-center"
       >
         <div className="radial_bg">
           <motion.h2
@@ -69,13 +69,13 @@ export const HomeHero = () => {
             {/* <span className=""></span> */}
           </motion.h2>
 
-          <p className="font-poppins text-[#787878] mt-6 md:mt-[100px] mb-12">
+          <p className="font-poppins text-[16px] font-normal text-[#787878] mt-6 md:mt-[100px] mb-12">
             today's rapidly evolving digital landscape establishing a strong
             online presenci crucial for businesses of all sizes. This article
             explores key strategies{" "}
           </p>
 
-          <div className="buttons w-full flex flex-col md:flex-row md:justify-center items-center gap-6 md:gap-10">
+          <div className="buttons w-full flex flex-col md:flex-row gap-6 md:gap-10">
           <PrimaryButton className="border-[#1E2135]">
             {RocketIcon} Discover More
           </PrimaryButton>

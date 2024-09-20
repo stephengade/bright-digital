@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileNavMenu } from "./mobile.navigation";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const RocketIcon = (
   <svg
@@ -60,12 +60,13 @@ export const NavigationBar = () => {
 
 
   return (
+    <AnimatePresence>
     <motion.nav
-    className="fixed w-screen z-100"
+    className="fixed w-screen z-[1000]"
     variants={navbarVariants}
     animate={isScrolled ? "colored" : "transparent"}
      >
-      <div className="nav w-screen overflow-hidden max-w-[1520px] mx-auto flex flex-row flex-shrink-0 items-center justify-between py-3 md:py-[20px] px-4 md:px-8 lg:px-12">
+      <div className="nav w-screen overflow-hidden max-w-[1520px] flex flex-row flex-shrink-0 items-center justify-between py-3 md:py-[20px] px-4 md:px-8 lg:px-12">
         <div className="brand__logo select-none">
           <MainLogo />
         </div>
@@ -94,5 +95,6 @@ export const NavigationBar = () => {
         </div>
       </div>
     </motion.nav>
+    </AnimatePresence>
   );
 };

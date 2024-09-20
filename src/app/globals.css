@@ -96,3 +96,17 @@ body {
 border-radius: 950px;
 background: radial-gradient(50% 50% at 50% 50%, rgba(92, 95, 228, 0.12) 0%, rgba(92, 95, 228, 0.00) 100%);
 }
+
+p, h3 {
+  line-height: 140%;
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--font-poppins)
+}
+
+h1,h2,h3,h4, h2 span {
+  font-family: var(--font-manrope)
+}
+

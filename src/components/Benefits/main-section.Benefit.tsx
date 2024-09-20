@@ -36,8 +36,8 @@ export const MainBenefitSection = () => {
       </div>
 
       <div className="mt-6 md:mt-0  md:w-1/2 lg:w-2/3 flex flex-col justify-between">
-        <h3 className="text-[#787878] my-6 font-poppins">
-          <span className="text-[#F3F3F4]">
+        <h3 className="text-[#787878] font-[400] my-6 font-poppins">
+          <span className="text-[#F3F3F4] underline">
             Whether you&#39;re a startup or a global corporation you branding
             needs
           </span>{" "}

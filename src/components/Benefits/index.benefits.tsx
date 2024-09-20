@@ -20,7 +20,7 @@ export const Benefits = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="text-[30px] text-center md:text-[45px] font-[500] leading-[140%]"
+          className="text-[30px] text-center md:text-[45px] font-[400] leading-[140%]"
         >
           <span className="hidden md:flex flex-row justify-center flex-wrap">
             {title.split("").map((letter, index) => (

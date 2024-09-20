@@ -14,7 +14,7 @@ const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
   display: "swap",
-  weight: "100",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -29,9 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${poppins.variable} antialiased`}>
+      <body className={`${manrope.variable} ${poppins.variable} max-w-[1520px] scroll-smooth antialiased overflow-x-hidden mx-auto`}>
         <NavigationBar />
-        <main className="pt-[120px] md:pt-[150px]  w-full max-w-[1520px] px-4 md:px-8 lg:px-12 min-h-screen">
+        <main className="pt-[120px] md:pt-[150px]  w-screen  px-4 md:px-8 lg:px-12 min-h-screen">
           {children}
         </main>
       </body>

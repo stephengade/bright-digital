@@ -102,14 +102,14 @@ export const FeatureIndex = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="text-[30px] text-center md:text-[45px] md:flex flex-row md:flex-col justify-center items-center flex-wrap leading-[140%]"
+            className="text-[30px] text-center md:text-[45px] md:flex flex-row md:flex-col flex-wrap leading-[140%]"
           >
             <span className="text-[#F3F3F4] inline-flex items-center gap-2 flex-wrap">
               Beyond
               <span className="inline-block bg-[#D9D9D9] rounded-[30px] w-[175px] h-[30px] md:h-[48px]"></span>{" "}
               Compres Brand
             </span>
-            <span className="hidden md:flex flex-row">
+            <span className="hidden md:flex flex-row ml-0">
               {title.split("").map((letter, index) => (
                 <motion.span
                   key={index}
