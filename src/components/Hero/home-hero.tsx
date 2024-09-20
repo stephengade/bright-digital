@@ -51,7 +51,7 @@ export const HomeHero = () => {
             </span>
             <span className="text-[#F3F3F4] inline-flex items-center gap-2 flex-wrap">
               Digital{" "}
-              <span className="inline-block bg-[#D9D9D9] rounded-[30px] w-[175px] h-[30px] md:h-[68px]"></span>{" "}
+              <span className="inline-block bg-[#D9D9D9] rounded-[30px] w-[175px] h-[50px] md:h-[68px]"></span>{" "}
               Age <span className="md:hidden text-[#F3F3F4]">Strategies</span>
             </span>
 

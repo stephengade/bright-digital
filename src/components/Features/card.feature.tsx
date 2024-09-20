@@ -9,16 +9,16 @@ interface ICard {
 export const FeatureCard = ({ title, image, description }: ICard) => {
   return (
     <div className="">
-      <div className="relative">
+      <div className="relative pl-0">
         <Image
           src={image}
           alt={title}
           width={1000}
           height={500}
-          className="w-[90%] md:w-full"
+          className="w-[95%] ml-0 pl-0 md:w-2/2"
         />
         <svg
-          className="absolute right-[10%] md:right-0 bottom-0 cursor-pointer  transition animate-spin hover:animate-none"
+          className="absolute right-[4%] md:right-0 bottom-0 cursor-pointer  transition animate-spin hover:animate-none"
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="50"

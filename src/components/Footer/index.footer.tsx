@@ -52,7 +52,7 @@ export const FooterIndex = () => {
           </div>
         </div>
 
-        <div className="flex  flex-row justify-between w-2/2 lg:w-1/4 pr-4 md:pr-0">
+        <div className="flex  flex-row justify-between w-2/2 lg:w-1/4">
           <FooterLinkHelper
             title="company"
             data={["About", "Features", "Works", "Career"]}

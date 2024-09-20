@@ -121,7 +121,7 @@ export const FeatureIndex = () => {
               ))}
             </span>
 
-            <span className="md:hidden text-[#F3F3F4] flex flex-wrap">
+            <span className="md:hidden text-[#F3F3F4] flex text-left justify-start flex-wrap">
               {title}
             </span>
           </motion.h2>

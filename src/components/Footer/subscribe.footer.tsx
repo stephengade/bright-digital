@@ -2,7 +2,7 @@ import { PrimaryButton } from "../bright-components/primary-button"
 
 export const FooterSubscribe = () => {
     return (
-        <div className="mt-12 lg:mt-0 pr-4 md:pr-0">
+        <div className="mt-12 lg:mt-0">
              <h3 className="text-white uppercase font-[600] text-[13px] leading-[22px] tracking-[3px] font-manrope ">
         subscribe
       </h3>

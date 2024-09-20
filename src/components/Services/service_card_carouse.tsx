@@ -53,7 +53,7 @@ const ServiceCardCarousel = () => {
         {service_data.map(({ description, icon, title }) => (
           <div
             key={title.split('').join()}
-            className="w-[100%] flex-shrink-0 snap-center px-4 md:w-1/2 lg:md:w-1/3"
+            className="w-[100%] flex-shrink-0 snap-center px-1 md:w-1/2 lg:md:w-1/3"
           >
             <ServiceCard
               description={description}

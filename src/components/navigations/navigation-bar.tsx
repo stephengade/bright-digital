@@ -66,7 +66,7 @@ export const NavigationBar = () => {
     variants={navbarVariants}
     animate={isScrolled ? "colored" : "transparent"}
      >
-      <div className="nav w-screen overflow-hidden max-w-[1520px] flex flex-row flex-shrink-0 items-center justify-between py-3 md:py-[20px] px-4 md:px-8 lg:px-12">
+      <div className="nav w-screen overflow-hidden max-w-[1520px] flex flex-row flex-shrink-0 items-center justify-between py-3 md:py-[20px] px-8 lg:pl-12 lg:pr-16 ">
         <div className="brand__logo select-none">
           <MainLogo />
         </div>

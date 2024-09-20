@@ -95,7 +95,7 @@ export const service_data = [
 
   {
     title: "Content Creation",
-    description: "team product high quality engaging content",
+    description: "team product high quality engaging content for smart owners",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

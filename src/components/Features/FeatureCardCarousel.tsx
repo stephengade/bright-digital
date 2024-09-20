@@ -71,7 +71,7 @@ const FeatureCardCarousel = () => {
         {FeatureCardData.map(({ description, title }) => (
           <div
             key={title.split("").join()}
-            className="w-[100%] flex-shrink-0 snap-center px-4 md:w-1/2 lg:md:w-1/3"
+            className="w-[100%] flex-shrink-0 snap-center px-2 md:w-1/2 lg:md:w-1/3"
           >
             <FeatureCard
               image="/feature-card-image.svg"
