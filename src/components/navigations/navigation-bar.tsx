@@ -7,6 +7,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MobileNavMenu } from "./mobile.navigation";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export const RocketIcon = (
   <svg
@@ -38,9 +40,32 @@ export const RocketIcon = (
 export const NavigationBar = () => {
   const pathname = usePathname();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change state if scrolled more than 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Variants for the animation
+  const navbarVariants = {
+    transparent: { backgroundColor: "rgba(255, 255, 255, 0)", transition: { duration: 0.5 } },
+    colored: { backgroundColor: "#1E2135", transition: { duration: 0.5 } },
+  };
+
+
   return (
-    <nav className="fixed w-full z-[100]">
-      <div className="nav pt-5 md:pt-[37px] w-full max-w-[1520px] mx-auto flex flex-row flex-shrink-0 items-center justify-between px-3 md:px-8 lg:px-12">
+    <motion.nav
+    className="fixed w-screen z-100"
+    variants={navbarVariants}
+    animate={isScrolled ? "colored" : "transparent"}
+     >
+      <div className="nav w-screen overflow-hidden max-w-[1520px] mx-auto flex flex-row flex-shrink-0 items-center justify-between py-3 md:py-[20px] px-4 md:px-8 lg:px-12">
         <div className="brand__logo select-none">
           <MainLogo />
         </div>
@@ -64,10 +89,10 @@ export const NavigationBar = () => {
           <PrimaryButton>{RocketIcon} Discover More</PrimaryButton>
         </div>
 
-        <div className="mobile__nav__bar__trigger self-start lg:hidden">
+        <div className="mobile__nav__bar__trigger lg:hidden">
           <MobileNavMenu />
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };

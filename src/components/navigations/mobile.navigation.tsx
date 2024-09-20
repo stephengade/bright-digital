@@ -26,10 +26,10 @@ export const MobileNavMenu = () => {
       open={isOpen}
       onOpenChange={setIsOpen}
       triggerDrawer={
-        <span className="flex items-left lg:hidden text-white">
+        <span className="flex items-center lg:hidden">
          {isOpen ? 
-          <X className="text-white w-10 h-10" /> :
-          <Menu className="text-white w-10 h-10" /> 
+           <X className="text-white font-light w-10 h-10" /> :
+          <Menu className="text-white font-light w-10 h-10" /> 
         } 
         </span>
       }

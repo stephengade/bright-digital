@@ -36,7 +36,7 @@ export const HomeHero = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="text-[45px] md:text-[60px] lg:text-[72px] font-[500] md:flex flex-row md:flex-col flex-wrap leading-[140%]"
+            className="text-[45px] md:text-[60px] lg:text-[72px] font-[400] md:font-[500] md:flex flex-row md:flex-col flex-wrap leading-[140%]"
           >
             <span className="flex flex-row">
               {title.split("").map((letter, index) => (
@@ -51,7 +51,7 @@ export const HomeHero = () => {
             </span>
             <span className="text-[#F3F3F4] inline-flex items-center gap-2 flex-wrap">
               Digital{" "}
-              <span className="inline-block bg-[#D9D9D9] rounded-[30px] w-[175px] h-[68px]"></span>{" "}
+              <span className="inline-block bg-[#D9D9D9] rounded-[30px] w-[175px] h-[30px] md:h-[68px]"></span>{" "}
               Age <span className="md:hidden text-[#F3F3F4]">Strategies</span>
             </span>
 

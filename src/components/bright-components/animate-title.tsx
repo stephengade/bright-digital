@@ -24,7 +24,7 @@ export const TriggeredTitle = ({children, className}: any) => {
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"} // Triggers animation based on `inView`
-      className={cn("font-bold text-center py-10", className)}
+      className={cn("py-10", className)}
     >
      {children}
     </motion.div>

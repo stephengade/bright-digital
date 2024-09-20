@@ -13,7 +13,7 @@ export const FooterIndex = () => {
   return (
     <footer className=" pt-[200px] pb-[70px]">
       <div className="text-[#787878] h-[1px] bg-[#787878]" />
-      <div className="w-full radial_bg py-12 lg:py-24 flex flex-col md:flex-row justify-between">
+      <div className="w-full md:radial_bg py-12 lg:py-24 flex flex-col md:flex-row justify-between">
         <div className="w-4/4 md:w-2/4 lg:w-1/4">
           <MainLogo />
           <p className="about_brand mt-5 text-sm font-poppins text-[#787878] ">
