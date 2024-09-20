@@ -24,7 +24,7 @@ export const ServiceCard = ({
         border: `2px solid rgba(243, 243, 244, 0.15)`,
       }}
       className={cn(
-        "hero-card rounded-[50px] cursor-pointer  px-8 py-10 flex flex-col flex-shrink-0 justify-center shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] transition duration-300 hover:shadow-[0_0_10px_2px_rgba(59,130,246,0.8)] hover:border-transparent",
+        "hero-card rounded-[50px] cursor-pointer  px-6 py-10 flex flex-col flex-shrink-0 justify-center shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] transition duration-300 hover:shadow-[0_0_10px_2px_rgba(59,130,246,0.8)] hover:border-transparent",
         className
       )}
     >

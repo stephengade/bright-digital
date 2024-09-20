@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} ${poppins.variable} antialiased`}>
         <NavigationBar />
-        <main className="pt-[120px] md:pt-[150px]  w-full max-w-[1520px] px-3 md:px-8 lg:px-12 min-h-screen">
+        <main className="pt-[120px] md:pt-[150px]  w-full max-w-[1520px] px-4 md:px-8 lg:px-12 min-h-screen">
           {children}
         </main>
       </body>
