@@ -10,6 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 
 interface iDrawer {
   closeDrawer?: string | React.ReactNode;
@@ -34,7 +35,7 @@ export const AppDrawer = ({
   onOpenChange,
 }: iDrawer) => {
   return (
-    <div className="relative z-[200]">
+    <div className="relative z-[1500]">
       <Sheet open={open} onOpenChange={onOpenChange}>
         <SheetTrigger asChild className="cursor-pointer">
           {triggerDrawer}
@@ -43,10 +44,10 @@ export const AppDrawer = ({
         <SheetContent
           side={position}
           className={
-            position === "bottom"
-              ? "max-h-[90vh] bg-[#080A16] z-[200] rounded-t-[32px] overflow-x-hidden"
-              : "overflow-y-auto bg-[#080A16]"
-          }
+            cn(position === "bottom"
+              ? "h-screen bg-[#080A16] z-[200] rounded-t-[32px] overflow-x-hidden"
+              : "overflow-y-auto bg-[#080A16]", position === "top" && "h-screen"
+        )}
         >
           <SheetHeader>
             <SheetTitle>{title}</SheetTitle>

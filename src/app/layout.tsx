@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} ${poppins.variable} max-w-[1520px] scroll-smooth antialiased overflow-x-hidden mx-auto`}>
         <NavigationBar />
-        <main className="pt-[120px] md:pt-[150px]  w-screen  px-4 md:px-8 lg:px-12 min-h-screen">
+        <main className="pt-[120px] md:pt-[150px]  w-screen  px-4 md:px-8 lg:px-12 min-h-screen overflow-x-hidden">
           {children}
         </main>
       </body>

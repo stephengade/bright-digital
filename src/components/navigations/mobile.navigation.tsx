@@ -22,7 +22,7 @@ export const MobileNavMenu = () => {
 
   return (
     <AppDrawer
-      position="left"
+      position="top"
       open={isOpen}
       onOpenChange={setIsOpen}
       triggerDrawer={
@@ -34,9 +34,9 @@ export const MobileNavMenu = () => {
         </span>
       }
     >
-      <div className="sidebar lg:hidden z-[100] flex-col justify-between w-full md:w-[200px]">
+      <div className="sidebar lg:hidden z-[1500] flex-col justify-between w-full md:w-[200px]">
       
-          <div className="sidebar_pages inline-flex flex-col gap-10 md:mt-[25px]">
+          <div className="sidebar_pages inline-flex flex-col gap-10 py-[100px] md:mt-[25px]">
             {NavLinks.map(({ name: title, url: link, id }) => (
               <button
               className={cn(
