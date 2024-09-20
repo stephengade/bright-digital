@@ -35,7 +35,7 @@ export const AppDrawer = ({
   onOpenChange,
 }: iDrawer) => {
   return (
-    <div className="relative z-[1500]">
+    <div className="relative z-[200]">
       <Sheet open={open} onOpenChange={onOpenChange}>
         <SheetTrigger asChild className="cursor-pointer">
           {triggerDrawer}
